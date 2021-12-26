@@ -1,5 +1,10 @@
 /*portfolio style*/
-
+.portfolio-work-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: -15px;
+}
 .btns{display: flex; justify-content: center;}
 .portfolio-btn{
     font-family: inherit;
@@ -11,27 +16,46 @@
     letter-spacing: 3%;
     text-align: center;
     color: var(--second-text-color);
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
+    padding: 6px 22px;
+    margin-right: 8px;
+    margin-bottom: 50px;
 }
 .portfolio-btn:hover, 
 .portfolio-btn:focus{
     background-color: var(--optional-color); color: var(--main-bg-color);
 }
+.portfolio-work-examples img{
+    display: block;
+}
 .portfolio-work-examples{
-    display: inline-block;
     border: 1px #EEEEEE solid;
-    text-align: center;
+    text-align: left;
     width: 370px;
-    height: 404px;
+    margin: 15px;
+}
+.portfolio-work-examples:nth-child(3n){
+    margin-right: 0;
 }
 .portfolio-work-examples-name{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 6%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: var(--second-text-color);
+  
 }
 .portfolio-work-examples-discrition{
     font-size: 16px;
     line-height: 1.87;
     color: var(--main-text-color);
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+ 
 }
