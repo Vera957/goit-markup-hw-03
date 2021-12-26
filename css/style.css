@@ -39,7 +39,7 @@ body {
   padding-right: 0;
 }
 
-.container{
+.centered{
   width: 1600px;
   padding: 0;
   margin-right: auto;
@@ -47,8 +47,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
-.centered{
-  width: 1170px;
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -68,6 +70,10 @@ body {
    display: flex;
    align-items: center;
   
+ }
+
+ .border-botom{
+   border-bottom: 1px solid #ECECEC;
  }
 
  .just-nav{
@@ -108,7 +114,7 @@ body {
   font-weight: 500;
 }
 .logo {
-  font-family: Railway;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -215,15 +221,14 @@ body {
 }
 .nav-tel {
   color: var(--main-text-color);
-  }
-
+}
 
 .advantages{
   padding: 0;
   display: flex;
 }
 .advantages .item{
-  width: calc((100%-90px)/4);
+  width: calc((100% - 30px - 90px)/4);
   margin-left: 30px;
 }
 
