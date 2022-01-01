@@ -11,9 +11,8 @@
     padding: 0;
     margin-bottom: 50px;
 }
-.btns .item{
-    margin-right: 4px;
-    margin-left: 4px;
+.btns .item:not(:last-child){
+    margin-right: 8px;
 }
 .portfolio-btn{
     font-family: inherit;
@@ -38,29 +37,32 @@
     display: block;
 }
 .portfolio-work-examples{
-    border-bottom: 1px #EEEEEE solid;
     text-align: left;
     width: 370px;
     margin: 15px;
 }
-.portfolio-work-examples:nth-child(3n){
-    margin-right: 0;
+.portfolio-card-discription{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px #EEEEEE solid;
+    border-top: none;
 }
+
 .portfolio-work-examples-name{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 6%;
-    margin-top: 20px;
     margin-bottom: 0;
-    margin-left: 20px;
     color: var(--second-text-color);
+    margin: 0;
+    margin-bottom: 4px;
 }
 .portfolio-work-examples-discrition{
     font-size: 16px;
     line-height: 1.87;
     color: var(--main-text-color);
-    margin-top: 4px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin: 0;
 }

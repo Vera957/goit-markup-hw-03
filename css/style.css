@@ -60,36 +60,8 @@ body {
   margin-bottom: 0;
 }
 
-.positions{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- }
 
- .start{
-   display: flex;
-   align-items: center;
-  
- }
 
- .border-botom{
-   border-bottom: 1px solid #ECECEC;
- }
-
- .just-nav{
-   justify-content: flex-start;
- }
-
-.header-links{
-   display: flex;
-   padding-top: 32px;  
-   padding-bottom: 32px; 
- }
-
-.just-contacts{
-  display: flex;
-  justify-self: flex-end;
-}
 .main-font-style {
   color: var(--main-text-color);
   font-weight: 400;
@@ -98,14 +70,41 @@ body {
 }
 
 /*index-page*/
+
+
 .no-lines-under-link {
   text-decoration: none;
 }
 .no-dots-ul {
   list-style: none;
 }
-.no-cursive{font-style: normal;
+.no-cursive{
+  font-style: normal;
   margin-top: 20px;
+}
+
+.border-botom{
+   border-bottom: 1px solid #ECECEC;
+}
+
+
+.positions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.start{
+  display: flex;
+  align-items: center;
+}
+
+.just-nav>ul{
+  display: flex;
+}
+.just-contacts{
+  display: flex;
 }
 
 .nav {
@@ -119,8 +118,6 @@ body {
   font-size: 26px;
   line-height: 1.17;
   letter-spacing: 3%;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 .section-headline {
   font-weight: 700;
@@ -134,8 +131,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;;
+  margin-bottom: 10px;
 }
 
 .members-cards{
@@ -159,8 +155,12 @@ body {
   margin-right: 0;
 }
 
-.member-card-discription{
+.member-card-name-position{
+  padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.member-card-discription{
   margin: 0;
 }
 
@@ -235,6 +235,9 @@ body {
 .advantages .item:first-child{
   margin-left: 0;
 }
+.advantages-container{
+  padding-bottom: 0;
+}
 
 .examples{
   display: flex;
@@ -289,16 +292,18 @@ body {
 .hero {
   background-color: var(--footer-hero-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-marketing {
   color: var(--main-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   text-align: center;
-  margin-bottom: 10px;
-  padding-top: 200px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .hero-btn {
@@ -312,7 +317,6 @@ body {
   letter-spacing: 6%;
   text-align: center;
   cursor: pointer;
-  margin-bottom: 200px;
   min-width: 200px;
   padding: 10px 32px;
   border-radius: 4px;
